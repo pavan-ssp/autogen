@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # autogen
 
 
@@ -47,3 +48,6 @@ git push -u origin main
 git push -u origin master  
 
 :: Pushes your local code to GitHub and links it to the remote branch  
+=======
+# autogen
+>>>>>>> dac2c620f3c587596d07b34314d1dac07cb5e8ab
