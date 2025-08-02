@@ -57,7 +57,7 @@ agent = AssistantAgent(
     model_client=model_client,
     system_message='You are a helpful assistant that can provide cat facts using the cat_facts_api tool. Give the result with summary',
     tools=[http_tool],
-    reflect_on_tool_use=True
+    reflect_on_tool_use=False
 )
 
 
@@ -65,7 +65,9 @@ agent = AssistantAgent(
 async def main(): 
     result = await agent.run(task = 'Give me a random cat fact')
 
-    print(result.messages)
+    print(result.messages[-1].content)
+    #print(result.messages)
+    
 
 if (__name__ == "__main__"):
     asyncio.run(main())
