@@ -5,6 +5,7 @@ load-dotenv
 dotenv
 openai
 tiktoken
-#autogen-ext['http-tool']
-#autogen-ext['openai']
-json-schema-to-pydantic
+autogen-ext[http-tool]
+autogen-ext[openai]
+langchain
+langchain-community
