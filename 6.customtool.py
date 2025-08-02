@@ -42,6 +42,7 @@ async def main():
     result = await agent.run(task = 'Reverse the string "Hello, World!"')
 
     print(result.messages[-1].content)
+    print(result.messages)
 
 if (__name__ == "__main__"):
     asyncio.run(main())
